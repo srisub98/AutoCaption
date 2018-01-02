@@ -9,3 +9,5 @@ Using deep learning to automatically caption an image.
 5. Generate New Captions
 
 test images: Flickr8K dataset
+
+Research paper: [Show and Tell: A Neural Image Caption Generator](https://arxiv.org/abs/1411.4555)
