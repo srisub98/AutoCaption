@@ -27,7 +27,7 @@ def extract_features(directory):
             image = load_img(filename, target_size=(224,224))
         except IOError:
             continue
-        
+
         #convert image pixels to a numpy array
         image = img_to_array(image)
         #reshape data for the model
@@ -43,15 +43,9 @@ def extract_features(directory):
         print('>%s' % name)
     return features
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 directory = '/Users/Sri/Desktop/Projects/TensorFlow/AutoCaption/Flicker8k_Dataset'
-=======
-directory = 'Flicker8k_Dataset'
->>>>>>> d0677849d6c1921f78883aba9a39f99956d57daa
-=======
-directory = 'Flicker8k_Dataset'
->>>>>>> d0677849d6c1921f78883aba9a39f99956d57daa
+
 features = extract_features(directory)
 print('Extracted Features: %d' % len(features))
 #save to file
