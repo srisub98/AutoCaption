@@ -12,11 +12,9 @@ def extract_features(directory):
     #load the model
     model = VGG16()
     #re-structure the model
-<<<<<<< HEAD
+
     model.layers.pop() #remove the last layer which does the classification
-=======
-    model.layers.pop()
->>>>>>> d0677849d6c1921f78883aba9a39f99956d57daa
+
     model = Model(inputs=model.inputs, outputs=model.layers[-1].output)
     #summarize
     print(model.summary())
@@ -25,14 +23,11 @@ def extract_features(directory):
     for name in listdir(directory):
         #load an image from file
         filename = directory + '/' + name
-<<<<<<< HEAD
         try:
             image = load_img(filename, target_size=(224,224))
         except IOError:
             continue
-=======
-        image = load_img(filename, target_size=(224,224))
->>>>>>> d0677849d6c1921f78883aba9a39f99956d57daa
+        
         #convert image pixels to a numpy array
         image = img_to_array(image)
         #reshape data for the model
@@ -49,7 +44,11 @@ def extract_features(directory):
     return features
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 directory = '/Users/Sri/Desktop/Projects/TensorFlow/AutoCaption/Flicker8k_Dataset'
+=======
+directory = 'Flicker8k_Dataset'
+>>>>>>> d0677849d6c1921f78883aba9a39f99956d57daa
 =======
 directory = 'Flicker8k_Dataset'
 >>>>>>> d0677849d6c1921f78883aba9a39f99956d57daa
