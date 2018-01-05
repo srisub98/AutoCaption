@@ -1,5 +1,6 @@
 from numpy import argmax
 from pickle import load
+from pickle import dump
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
 from keras.models import load_model
@@ -106,6 +107,7 @@ print('Dataset: %d' % len(train))
 train_descriptions = load_clean_descriptions('descriptions.txt', train)
 print('Descriptions: train=%d' % len(train_descriptions))
 tokenizer = create_tokenizer(train_descriptions)
+dump(tokenizer,open('tokenizer.pkl','wb'))
 vocab_size = len(tokenizer.word_index) + 1
 print('Vocabulary Size: %d' % vocab_size)
 max_length = max_length(train_descriptions)
