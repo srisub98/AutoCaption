@@ -136,4 +136,4 @@ X1test, X2test, ytest = create_sequences(tokenizer, max_length, test_description
 model = define_model(vocab_size, max_length)
 filepath = 'model-ep{epoch:03d}-loss{loss:.3f}-val_loss{val_loss:.3f}.h5'
 checkpoint = ModelCheckpoint(filepath, monitor='val_loss', verbose=1, save_best_only=True, mode='min')
-model.fit([X1train, X2train], ytrain, epochs=2, verbose=2, callbacks=[checkpoint], validation_data=([X1test, X2test], ytest))
+model.fit([X1train, X2train], ytrain, epochs=10, verbose=2, callbacks=[checkpoint], validation_data=([X1test, X2test], ytest))

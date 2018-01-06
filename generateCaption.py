@@ -44,8 +44,8 @@ def generate_desc(model, tokenizer, photo, max_length):
 
 # load the tokenizer
 tokenizer = load(open('tokenizer.pkl', 'rb'))
-max_length = 20
-model = load_model('model-ep004-loss3.200-val_loss3.399.h5')
+max_length = 34
+model = load_model('model-ep004-loss3.617-val_loss3.873.h5')
 photo = extract_features('example.jpg')
 description = generate_desc(model, tokenizer, photo, max_length)
 print(description)
