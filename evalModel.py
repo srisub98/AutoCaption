@@ -123,6 +123,6 @@ print('Descriptions: test=%d' % len(test_descriptions))
 test_features = load_photo_features('features.pkl', test)
 print('Photos: test=%d' % len(test_features))
 
-filename = 'model-ep001-loss4.529-val_loss4.062.h5'
+filename = 'model-ep004-loss3.617-val_loss3.873.h5'
 model = load_model(filename)
 evaluate_model(model, test_descriptions, test_features, tokenizer, max_length)
