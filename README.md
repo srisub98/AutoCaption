@@ -2,10 +2,11 @@
 Using deep learning to automatically caption an image.
 
 Example Input:
-![ScreenShot](https://raw.github.com/srisub98/AutoCaption/blob/master/example.jpg)
+![example](https://user-images.githubusercontent.com/25394662/34656603-3dd0f62e-f3d1-11e7-8625-3f9f923bdd03.jpg)
 
 Example Output:
-![ScreenShot](https://raw.github.com/srisub98/AutoCaption/blob/master/Screen%20Shot%202018-01-07%20at%205.29.39%20PM.png)
+<img width="383" alt="screen shot 2018-01-07 at 5 29 39 pm" src="https://user-images.githubusercontent.com/25394662/34656606-433a491c-f3d1-11e7-965a-e2692fd3d36a.png">
+
 5 Steps:
 1. Prep Photo Data
 2. Prep Text Data
