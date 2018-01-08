@@ -9,6 +9,11 @@ Example Output:
 
 <img width="383" alt="screen shot 2018-01-07 at 5 29 39 pm" src="https://user-images.githubusercontent.com/25394662/34656606-433a491c-f3d1-11e7-965a-e2692fd3d36a.png">
 
+Finalized BLEU scores:
+
+<img width="134" alt="screen shot 2018-01-07 at 5 46 45 pm" src="https://user-images.githubusercontent.com/25394662/34656737-edba3342-f3d2-11e7-82e7-9a2aef9a8afb.png">
+
+
 5 Steps:
 1. Prep Photo Data
 2. Prep Text Data
